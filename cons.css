@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background: url("home.webp") center/cover no-repeat;
+  position:relative;
+  height:100vh;
+  inset:0;
+}
+header{
+  color:white;
+  display:flex;
+}
+ul{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height:60px;
+  list-style: none;
+  font-size:18px; 
+}
+ul a{
+  padding:5px 10px 5px 10px;
+  text-decoration: none;
+  color:black;
+}
+
+.navbar{
+  position:static;
+  width:100%;
+}
+.navbar:hover{
+  background:linear-gradient(45deg,#CCCCFF,blue);
+  color:black;
+}
+h4{
+  color:white;
+  font-weight:bolder;
+   font-size:30px;
+   z-index:1;
+}
+ul li {
+  font-size:20px;
+  font-weight: bold;
+}
+#homepage{
+  margin-top:260px;
+  margin-left:50px;
+  height:300px;
+  width:500px;
+  font-weight: bolder;
+}
+#head{
+  font-size:60px;
+  animation:headline 4s  ease-out;
+  color:white;
+  
+}
+@keyframes headline{
+  from{
+    transform:translateY(100%);
+    opacity : 0;
+  }
+  to{
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+.headline{
+  font-size:20px;
+  animation:swipeleft 4s  ease-in;
+  color:white;
+   background-color: rgba(0,0,0,0.6);
+
+}
+@keyframes swipeleft{
+  from{
+    transform: translateX(-50%);
+    opacity:0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
